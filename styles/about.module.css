@@ -1,0 +1,82 @@
+.header{
+    background: linear-gradient(45deg, blue, white);
+    padding: 10%;
+    height:200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    position: relative;
+
+    
+}
+
+.header:before, .header:after{
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    height: 50px;
+    background:radial-gradient(closest-side,
+        white, white 50%, transparent 50%);
+    background-size: 50px 50px;
+    background-position: 0 25px;
+    background-repeat: repeat-x;
+
+
+}
+.header:after{
+    background:radial-gradient(closest-side,
+    transparent, transparent 50%, white 50%);
+    background-size: 50px 50px;
+    background-position: 25px -25px;
+    background-repeat: repeat-x;
+    bottom: -25px;
+
+
+
+
+
+
+
+}
+
+.about{
+    background: linear-gradient(-50deg, blue 50%, white 60%);
+    box-shadow:10px 10px 8px blue;
+}
+
+.image{
+    border-radius: 80%;
+}
+
+.right{
+    float: right;
+}
+.container{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    animation: animate 16s ease-in-out infinite;
+}
+@keyframes animate{
+    0%, 100%{
+        background-image: url(/abcd-website/public/abcd1.jpg);
+    }
+    25%{
+        background-image: url(/abcd-website/public/abcd1.jpg);
+    }
+    50%{
+        background-image: url(/abcd-website/public/abcd1.jpg);
+    }
+    75%{
+        background-image: url(/abcd-website/public/abcd1.jpg);
+    }
+
+
+}
